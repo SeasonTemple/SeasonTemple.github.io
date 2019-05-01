@@ -3,11 +3,11 @@
   <title>SeasonTemple-Blog</title>
   
   
-  <link href="/atom.xml" rel="self"/>
+  <link href="seasontemple.top/atom.xml" rel="self"/>
   
-  <link href="http://seasontemple.top/"/>
+  <link href="https://seasontemple.top/"/>
   <updated>2019-04-30T14:09:05.442Z</updated>
-  <id>http://seasontemple.top/</id>
+  <id>https://seasontemple.top/</id>
   
   <author>
     <name>SeasonTemple</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://seasontemple.top/2019/04/30/hello-world/"/>
-    <id>http://seasontemple.top/2019/04/30/hello-world/</id>
+    <link href="https://seasontemple.top/2019/04/30/hello-world/"/>
+    <id>https://seasontemple.top/2019/04/30/hello-world/</id>
     <published>2019-04-30T14:09:05.442Z</published>
     <updated>2019-04-30T14:09:05.442Z</updated>
     
