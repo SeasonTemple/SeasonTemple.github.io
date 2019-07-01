@@ -1,0 +1,1196 @@
+<!--
+	作者：Sariay
+	时间：2018-09-25
+	描述：There may be a bug, but don't worry, QiLing(器灵) says that it can work normally!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+		
+
+<head><meta name="generator" content="Hexo 3.8.0">
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      Maven | SeasonTemple-Blog
+    
+  </title>
+  <meta name="author" content="SeasonTemple">
+  <meta name="keywords" content>
+  <meta name="description" content>
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/SeasonTemple.github.io/img/favicon.ico">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/SeasonTemple.github.io/css/Annie.css">
+  
+  <!-- jquery -->
+	<script src="/SeasonTemple.github.io/js/jquery.min.js"></script>
+
+  <!-- leancloud -->
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+<script src="/SeasonTemple.github.io/js/leancloud.js"></script>
+</head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground" data-img-mode="normal" data-normal-src="https://source.unsplash.com/collection/954550/1920x1080" data-random-max="110" data-random-src="https://sariay.github.io/Random-img/">
+	<div class="mask">
+		<!-- Logo and navigation -->
+		<div class="h-header">
+			<div id="logo">
+				<a href="/">
+						
+						<img src="/SeasonTemple.github.io/img/logo.png" alt="Logo">
+					
+				</a>
+			</div>
+			
+			<div id="navigation-show">
+				<ul>
+	
+		<li class="menu-home">
+			<a href="/SeasonTemple.github.io/" class="menu-item-home">主页</a>
+		</li>
+	
+		<li class="menu-archive">
+			<a href="/SeasonTemple.github.io/archives" class="menu-item-archive">归档</a>
+		</li>
+	
+		<li class="menu-categories">
+			<a href="/SeasonTemple.github.io/categories" class="menu-item-categories">分类</a>
+		</li>
+	
+		<li class="menu-tags">
+			<a href="/SeasonTemple.github.io/tags" class="menu-item-tags">标签</a>
+		</li>
+	
+		<li class="menu-about">
+			<a href="/SeasonTemple.github.io/about" class="menu-item-about">关于</a>
+		</li>
+	
+		<li class="menu-gallery">
+			<a href="/SeasonTemple.github.io/gallery" class="menu-item-gallery">相册</a>
+		</li>
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+			</div>				
+		</div>
+
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<p class="motto"></p>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more"><i class="fa fa-angle-double-down" aria-hidden="true"></i>
+			</a>
+
+			
+				<!-- 
+	This is only a demo, please go to "https://time.is" to set your city time! 
+-->
+<style type="text/css">
+	.header-date {
+		font-size: 1.6rem;
+		color: #fff;
+		position: absolute;
+		bottom: 5px;
+		right: 1rem;
+		writing-mode: tb-rl;
+	}	
+	
+	.header-date a {
+		border-bottom: none;
+	}
+
+	@media only screen and (max-width: 768 ) {
+		.header-date {
+			font-size: 1rem;
+		}			
+	}
+</style>
+<div class="header-date">
+	<a href="https://time.is/Beijing" id="time_is_link" rel="nofollow"></a>
+	<span id="Beijing_z43d"></span>
+</div>
+<script src="//widget.time.is/zh.js"></script>
+<script>
+	time_is_widget.init({
+		Beijing_z43d:{
+			template:"DATE", 
+			date_format:"year年 monthname dnum日"
+		}
+	});
+</script>
+			
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><h1>0.0%</h1></div>
+
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			当前文章&nbsp;:&nbsp;《Maven》
+		
+	</p>
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<h3>Navigation</h3>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	<div class="nav-body">
+		<ul>
+	
+		<li class="menu-home">
+			<a href="/SeasonTemple.github.io/" class="menu-item-home">主页</a>
+		</li>
+	
+		<li class="menu-archive">
+			<a href="/SeasonTemple.github.io/archives" class="menu-item-archive">归档</a>
+		</li>
+	
+		<li class="menu-categories">
+			<a href="/SeasonTemple.github.io/categories" class="menu-item-categories">分类</a>
+		</li>
+	
+		<li class="menu-tags">
+			<a href="/SeasonTemple.github.io/tags" class="menu-item-tags">标签</a>
+		</li>
+	
+		<li class="menu-about">
+			<a href="/SeasonTemple.github.io/about" class="menu-item-about">关于</a>
+		</li>
+	
+		<li class="menu-gallery">
+			<a href="/SeasonTemple.github.io/gallery" class="menu-item-gallery">相册</a>
+		</li>
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+	</div>
+	<div class="nav-footer">
+		<ul>
+	
+		<li>
+			<a href="https://github.com/SeasonTemple" target="_blank">
+				<i class="fa fa-github"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="https://github.com/" target="_blank">
+				<i class="fa fa-weibo"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="https://github.com/" target="_blank">
+				<i class="fa fa-pinterest"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="https://github.com/" target="_blank">
+				<i class="fa fa-instagram"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="https://github.com/" target="_blank">
+				<i class="fa fa-twitter"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/SeasonTemple.github.io/atom.xml" target="_blank">
+				<i class="fa fa-rss"></i>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-17
+	描述：
+		插件名称：katelog.min.js
+		插件作者：KELEN
+		插件来源: https://github.com/KELEN/katelog
+-->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		
+		<script src="/SeasonTemple.github.io/plugin/toc/katelog.min.js"></script>
+
+		
+	 
+
+<div class="layout-post">
+	<div id="layout-post">
+	<div class="article-title">
+		<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+		
+	<a href="/SeasonTemple.github.io/2019/07/01/Maven/" itemprop="url">
+		Maven
+	</a>
+
+	</div>
+
+	<div class="article-meta">
+		<span>
+			<i class="fa fa-calendar"></i>
+			
+
+
+	发布于
+
+	<a href="/SeasonTemple.github.io/2019/07/01/Maven/" itemprop="url">
+		<time datetime="2019-07-01T12:48:45.000Z" itemprop="datePublished">
+	  		2019-07-01
+	  </time>
+	</a>
+	&nbsp;
+
+
+
+
+
+			
+
+
+
+
+	更新于
+
+	<a href="/SeasonTemple.github.io/2019/07/01/Maven/" itemprop="url">
+		<time datetime="2019-07-01T12:48:45.000Z" itemprop="dateUpdated">
+	  		2019-07-02
+	  </time>
+	</a> 
+
+
+
+		</span>
+		<span>
+			<i class="fa fa-tags"></i>
+			
+	
+		<a href="/SeasonTemple.github.io/tags/Something-about-Maven/" class=" ">
+			Something about Maven
+		</a>
+	
+		
+		</span>
+		
+		
+
+
+
+	</div>
+
+	<div class="article-content" id="article-content">
+		<h1 id="今天来谈谈Maven"><a href="#今天来谈谈Maven" class="headerlink" title="今天来谈谈Maven"></a>今天来谈谈Maven</h1><p><a href="http://maven.apache.org" target="_blank" rel="noopener"><img src="/2019/07/01/Maven/Maven-Log.png" alt="Maven Log"></a></p>
+<h2 id="Maven是什么"><a href="#Maven是什么" class="headerlink" title="Maven是什么"></a>Maven是什么</h2><p>Maven——全称Apache Maven，是一个项目管理工具，它包含了一个项目对象模型 (Project Object Model)，一组标准集合，一个项目生命周期(Project Lifecycle)，一个依赖管理系统(Dependency Management System)，和用来运行定义在生命周期阶段(phase)中插件(plugin)目标(goal)的逻辑。当你使用Maven的时候，你用一个明确定义的项目对象模型来描述你的项目，然后Maven可以应用横切的逻辑，这些逻辑来自一组共享的（或者自定义的）插件。<br>Maven这个单词来自于意第绪语（犹太语），意为知识的积累，最初在Jakata Turbine项目中用来简化构建过程。当时有一些项目（有各自Ant build文件），仅有细微的差别，而JAR文件都由CVS来维护。于是希望有一种标准化的方式构建项目，一个清晰的方式定义项目的组成，一个容易的方式发布项目的信息，以及一种简单的方式在多个项目中共享JARs。</p>
+<p>也就是说，Maven是一个：</p>
+<ul>
+<li>构建工具：从源码到成品</li>
+<li>依赖管理工具：通过pom.xml来管理项目中的jar包依赖</li>
+<li>项目信息聚合工具：保持项目信息的一致性——使用与构建过程相同的元数据，Maven 能够生成一个网站或PDF，包括您要添加的任何文档，并添加到关于项目开发状态的标准报告中。</li>
+</ul>
+<h2 id="Maven的目标"><a href="#Maven的目标" class="headerlink" title="Maven的目标"></a>Maven的目标</h2><p>Maven的主要目标是让开发人员在最短的时间内理解开发工作的完整状态。为了实现这一目标，Maven试图处理以下几个方面的问题：    </p>
+<ul>
+<li>使构建过程变得简单</li>
+<li>提供统一的构建系统</li>
+<li>提供优质的项目信息</li>
+<li>提供最佳实践开发指南</li>
+<li>允许透明迁移到新功能</li>
+</ul>
+<h2 id="Maven的主要特点"><a href="#Maven的主要特点" class="headerlink" title="Maven的主要特点"></a>Maven的主要特点</h2><ul>
+<li>遵循最佳实践的简单项目设置 - 在几秒钟内启动新项目或模块</li>
+<li>所有项目的一致使用 - 意味着新开发人员进入项目的时间不会增加</li>
+<li>卓越的依赖管理，包括自动更新，依赖关闭（也称为传递依赖）</li>
+<li>能够轻松地同时处理多个项目</li>
+<li>一个庞大且不断增长的库和元数据库，可以立即使用，并与最大的开源项目安排实时可用的最新版本</li>
+<li>可扩展，能够轻松编写 Java或脚本语言的插件</li>
+<li>只需很少或不需要额外配置即可立即访问新功能</li>
+<li>用于在Maven之外进行依赖关系管理和部署的Ant任务</li>
+<li>基于模型的构建：Maven能够根据项目的元数据将任意数量的项目构建到预定义的输出类型（如JAR，WAR或分发）中，而无需在大多数情况下执行任何脚本编写。</li>
+<li>项目信息的连贯性站点：使用与构建过程相同的元数据，Maven能够生成包含您需要添加的任何文档的网站或PDF，并添加有关项目开发状态的标准报告。在“项目信息”和“项目报告”子菜单下，可以在本网站左侧导航栏的底部看到此信息的示例。**</li>
+<li>发布管理和发布发布：没有太多额外配置，Maven将与您的源代码控制系统（如Subversion或Git）集成，并根据特定标记管理项目的发布。它还可以将其发布到分发位置以供其他项目使用。Maven能够发布单个输出，例如JAR，包含其他依赖关系和文档的存档，或者作为源分发。</li>
+<li>依赖管理：Maven鼓励使用JAR和其他依赖项的中央存储库。Maven附带了一种机制，您的项目客户可以使用该机制从中央JAR存储库下载构建项目所需的任何JAR，就像Perl的CPAN一样。这允许Maven的用户跨项目重用JAR并鼓励项目之间的通信，以确保处理向后兼容性问题。</li>
+</ul>
+<h2 id="Maven的生命周期"><a href="#Maven的生命周期" class="headerlink" title="Maven的生命周期"></a>Maven的生命周期</h2><ul>
+<li>maven对构建(build)的过程进行了抽象和定义，这个过程被称为构建的生命周期(lifecycle)。</li>
+<li>生命周期(lifecycle)由多个阶段(phase)组成,每个阶段(phase)会挂接一到多个goal。</li>
+<li>goal是maven里定义任务的最小单元，相当于ant里的target。</li>
+<li>可以理解maven为一个插件的容器,每个插件绑定到某个goal执行</li>
+</ul>
+<h3 id="典型的构建生命周期"><a href="#典型的构建生命周期" class="headerlink" title="典型的构建生命周期"></a>典型的构建生命周期</h3><p>Maven 构建生命周期定义了一个项目构建跟发布的过程。<br>一个典型的 Maven 构建（build）生命周期是由以下几个阶段的序列组成的：<br>start-&gt;validate-&gt;compile-&gt;test-&gt;package-&gt;verify-&gt;install-&gt;deploy-&gt;end</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">阶段</th>
+<th style="text-align:left">处理</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">验证 validate</td>
+<td style="text-align:left">验证项目</td>
+<td style="text-align:left">验证项目是否正确且所有必须信息是可用的</td>
+</tr>
+<tr>
+<td style="text-align:left">编译 compile</td>
+<td style="text-align:left">执行编译</td>
+<td style="text-align:left">源代码编译在此阶段完成</td>
+</tr>
+<tr>
+<td style="text-align:left">测试 Test</td>
+<td style="text-align:left">测试</td>
+<td style="text-align:left">使用适当的单元测试框架（例如JUnit）运行测试。</td>
+</tr>
+<tr>
+<td style="text-align:left">包装 package</td>
+<td style="text-align:left">打包</td>
+<td style="text-align:left">创建JAR/WAR包如在 pom.xml 中定义提及的包</td>
+</tr>
+<tr>
+<td style="text-align:left">检查 verify</td>
+<td style="text-align:left">检查</td>
+<td style="text-align:left">对集成测试的结果进行检查，以保证质量达标</td>
+</tr>
+<tr>
+<td style="text-align:left">安装 install</td>
+<td style="text-align:left">安装</td>
+<td style="text-align:left">安装打包的项目到本地仓库，以供其他项目使用</td>
+</tr>
+<tr>
+<td style="text-align:left">部署 deploy</td>
+<td style="text-align:left">部署</td>
+<td style="text-align:left">拷贝最终的工程包到远程仓库中，以共享给其他开发人员和工程</td>
+</tr>
+</tbody>
+</table>
+<p><strong>为了完成该生命周期，这些阶段（包括其他未在上面罗列的生命周期阶段）将被按顺序地执行。</strong><br>Maven 有以下三个<strong>相互独立</strong>的标准的生命周期：</p>
+<ul>
+<li><strong>clean</strong>：项目清理的处理</li>
+<li><strong>default(或 build)</strong>：项目部署的处理</li>
+<li><strong>site</strong>：项目站点文档创建的处理</li>
+</ul>
+<h3 id="Clean生命周期"><a href="#Clean生命周期" class="headerlink" title="Clean生命周期"></a>Clean生命周期</h3><p>当我们执行 mvn post-clean 命令时，Maven 调用 clean 生命周期，它包含以下阶段：</p>
+<ul>
+<li><strong>pre-clean</strong>：执行一些需要在clean之前完成的工作</li>
+<li><strong>clean</strong>：移除所有上一次构建生成的文件</li>
+<li><strong>post-clean</strong>：执行一些需要在clean之后立刻完成的工作</li>
+</ul>
+<p><strong>注意：在一个生命周期中，运行某个阶段的时候，它之前的所有阶段都会被运行。</strong></p>
+<h3 id="Default-Build-生命周期"><a href="#Default-Build-生命周期" class="headerlink" title="Default(Build)生命周期"></a>Default(Build)生命周期</h3><p>这是 Maven 的主要生命周期，被用于构建应用，包括下面的 23 个阶段：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:left">生命周期阶段</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">1</td>
+<td style="text-align:left">validate</td>
+<td style="text-align:left">检查工程配置是否正确，完成构建过程的所有必要信息是否能够获取到。</td>
+</tr>
+<tr>
+<td style="text-align:left">2</td>
+<td style="text-align:left">initialize</td>
+<td style="text-align:left">初始化构建状态，例如设置属性。</td>
+</tr>
+<tr>
+<td style="text-align:left">3</td>
+<td style="text-align:left">generate-sources</td>
+<td style="text-align:left">生成编译阶段需要包含的任何源码文件。</td>
+</tr>
+<tr>
+<td style="text-align:left">4</td>
+<td style="text-align:left">process-sources</td>
+<td style="text-align:left">处理源代码，例如，过滤任何值（filter any value）。</td>
+</tr>
+<tr>
+<td style="text-align:left">5</td>
+<td style="text-align:left">generate-resources</td>
+<td style="text-align:left">生成工程包中需要包含的资源文件。</td>
+</tr>
+<tr>
+<td style="text-align:left">6</td>
+<td style="text-align:left">process-resources</td>
+<td style="text-align:left">拷贝和处理资源文件到目的目录中，为打包阶段做准备。</td>
+</tr>
+<tr>
+<td style="text-align:left">7</td>
+<td style="text-align:left">compile</td>
+<td style="text-align:left">编译工程源码。</td>
+</tr>
+<tr>
+<td style="text-align:left">8</td>
+<td style="text-align:left">process-classes</td>
+<td style="text-align:left">处理编译生成的文件，例如 Java Class 字节码的加强和优化。</td>
+</tr>
+<tr>
+<td style="text-align:left">9</td>
+<td style="text-align:left">generate-test-sources</td>
+<td style="text-align:left">生成编译阶段需要包含的任何测试源代码。</td>
+</tr>
+<tr>
+<td style="text-align:left">10</td>
+<td style="text-align:left">process-test-sources</td>
+<td style="text-align:left">处理测试源代码，例如，过滤任何值（filter any values）。</td>
+</tr>
+<tr>
+<td style="text-align:left">11</td>
+<td style="text-align:left">generate-test-resources</td>
+<td style="text-align:left">允许生成与测试相关的(非源码)资源。</td>
+</tr>
+<tr>
+<td style="text-align:left">12</td>
+<td style="text-align:left">process-test-resources</td>
+<td style="text-align:left">可以处理、转换和重新定位与测试相关的资源。</td>
+</tr>
+<tr>
+<td style="text-align:left">13</td>
+<td style="text-align:left">test-compile</td>
+<td style="text-align:left">编译测试源代码到测试目的目录。</td>
+</tr>
+<tr>
+<td style="text-align:left">14</td>
+<td style="text-align:left">process-test-classes</td>
+<td style="text-align:left">处理测试代码文件编译后生成的文件。</td>
+</tr>
+<tr>
+<td style="text-align:left">15</td>
+<td style="text-align:left">test</td>
+<td style="text-align:left">使用适当的单元测试框架（例如JUnit）运行测试。</td>
+</tr>
+<tr>
+<td style="text-align:left">16</td>
+<td style="text-align:left">prepare-package</td>
+<td style="text-align:left">在真正打包之前，为准备打包执行任何必要的操作。</td>
+</tr>
+<tr>
+<td style="text-align:left">17</td>
+<td style="text-align:left">package</td>
+<td style="text-align:left">获取编译后的代码，并按照可发布的格式进行打包，例如 JAR、WAR 或者 EAR 文件。</td>
+</tr>
+<tr>
+<td style="text-align:left">18</td>
+<td style="text-align:left">pre-integration-test</td>
+<td style="text-align:left">在集成测试执行之前，执行所需的操作。例如，设置所需的环境变量。</td>
+</tr>
+<tr>
+<td style="text-align:left">19</td>
+<td style="text-align:left">integration-test</td>
+<td style="text-align:left">处理和部署必须的工程包到集成测试能够运行的环境中。</td>
+</tr>
+<tr>
+<td style="text-align:left">20</td>
+<td style="text-align:left">post-integration-test</td>
+<td style="text-align:left">在集成测试被执行后执行必要的操作。例如，清理环境。</td>
+</tr>
+<tr>
+<td style="text-align:left">21</td>
+<td style="text-align:left">verify</td>
+<td style="text-align:left">运行检查操作来验证工程包是有效的，并满足质量要求。</td>
+</tr>
+<tr>
+<td style="text-align:left">22</td>
+<td style="text-align:left">install</td>
+<td style="text-align:left">安装工程包到本地仓库中，该仓库可以作为本地其他工程的依赖。</td>
+</tr>
+<tr>
+<td style="text-align:left">23</td>
+<td style="text-align:left">deploy</td>
+<td style="text-align:left">拷贝最终的工程包到远程仓库中，以共享给其他开发人员和工程。</td>
+</tr>
+</tbody>
+</table>
+<p>也可以用图表示：</p>
+<p><img src="/2019/07/01/Maven/lifecycle.png" alt="lifecycle"></p>
+<p><strong>与 Maven 生命周期相关的重要概念需要说明：</strong></p>
+<ul>
+<li><strong>当一个阶段通过 Maven 命令调用时，例如 mvn compile，只有该阶段之前以及包括该阶段在内的所有阶段会被执行。</strong></li>
+<li><strong>不同的 maven 目标将根据打包的类型（JAR / WAR / EAR），被绑定到不同的 Maven 生命周期阶段。</strong></li>
+</ul>
+<h3 id="Site周期"><a href="#Site周期" class="headerlink" title="Site周期"></a>Site周期</h3><p>Maven Site 插件一般用来创建新的报告文档、部署站点等。<br>包括下面的4个阶段：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">生命周期阶段</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">pre-site</td>
+<td style="text-align:left">执行一些需要在生成站点文档之前完成的工作</td>
+</tr>
+<tr>
+<td style="text-align:left">site</td>
+<td style="text-align:left">生成项目的站点文档</td>
+</tr>
+<tr>
+<td style="text-align:left">post-site</td>
+<td style="text-align:left">执行一些需要在生成站点文档之后完成的工作，并且为部署做准备</td>
+</tr>
+<tr>
+<td style="text-align:left">site-deploy</td>
+<td style="text-align:left">将生成的站点文档部署到特定的服务器上</td>
+</tr>
+</tbody>
+</table>
+<p><strong>这里经常用到的是site阶段和site-deploy阶段，用以生成和发布Maven站点，这可是Maven相当强大的功能，Manager比较喜欢，文档及统计数据自动生成，很好看。 在下面的例子中，我们将 maven-antrun-plugin:run 目标添加到 Site 生命周期的所有阶段中。这样我们可以显示生命周期的所有文本信息。</strong></p>
+<h2 id="Maven的坐标"><a href="#Maven的坐标" class="headerlink" title="Maven的坐标"></a>Maven的坐标</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">	&lt;groupId&gt;net.sf.json-lib&lt;/groupId&gt;</span><br><span class="line">	&lt;artifactId&gt;json-lib&lt;/artifactId&gt;</span><br><span class="line">	&lt;version&gt;2.4&lt;/version&gt;</span><br><span class="line">	&lt;type&gt;jar&lt;/type&gt;</span><br><span class="line">	&lt;classifier&gt;jdk15&lt;/classifier&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+<p>俗称 gav：使用下面三个向量子仓库中唯一定位一个 Maven 工程<br>在项目中的 pom.xml 文件中，我们可以看到下面gav的定义：</p>
+<ol>
+<li><strong>groupid</strong>：公司或组织域名倒序<br> <em>&lt;groupid&gt;com.ys.maven&lt;/groupid&gt;</em></li>
+<li><strong>artifactid</strong>：模块名，也是实际项目的名称<br> <em>&lt;artifactid&gt;Maven_05&lt;/artifactid&gt;</em></li>
+<li><strong>version</strong>：当前项目的版本<br> <em>&lt;version&gt;.0.1-SNAPSHOT&lt;/version&gt;</em></li>
+</ol>
+<h3 id="Maven-坐标和仓库，jar-包的关系"><a href="#Maven-坐标和仓库，jar-包的关系" class="headerlink" title="Maven 坐标和仓库，jar 包的关系"></a>Maven 坐标和仓库，jar 包的关系</h3><p>什么是仓库，是用来<strong>统一</strong>存放 jar 包的地方。<br>将上面配置的 gav 向量组合起来就是安装目录：<br>&emsp;<strong>com/ys/maven/Maven_05/0.0.1-SNAPSHOT/Maven_05-0.0.1-SNAPSHOT.jar</strong><br>而 jar 包为：<br>&emsp;<strong>Maven_05-0.0.1-SNAPSHOT.jar</strong><br>也就是：<br>&emsp;<strong>artifactid-version.jar</strong></p>
+<h2 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h2><p>什么是 依赖？相信有过一定开发经验的人知道，每当我们需要使用某个框架时，比如 SpringMVC，那么我们需要导入相应的 jar 包，但是手动导入包的时候，往往会漏掉几个 jar 包，那么在使用该框架的时候系统就会报错。那么就说导入的包与未导入的包存在依赖关系。而使用 Maven,我们只需要在 pom.xml 文件中进行相应的配置，它就会帮助我们自动管理 jar 包之间的依赖关系。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependencies&gt;</span><br><span class="line">    &lt;dependency&gt;</span><br><span class="line">        &lt;groupId&gt;junit&lt;/groupId&gt;     </span><br><span class="line">        &lt;artifactId&gt;junit&lt;/artifactId&gt;     </span><br><span class="line">        &lt;version&gt;3.8.1&lt;/version&gt;</span><br><span class="line">        &lt;type&gt;...&lt;/type&gt;</span><br><span class="line">        &lt;scope&gt;...&lt;/scope&gt;</span><br><span class="line">        &lt;optional&gt;...&lt;/optional&gt;</span><br><span class="line">        &lt;exclusions&gt;     </span><br><span class="line">            &lt;exclusion&gt;     </span><br><span class="line">              &lt;groupId&gt;...&lt;/groupId&gt;     </span><br><span class="line">              &lt;artifactId&gt;...&lt;/artifactId&gt;     </span><br><span class="line">            &lt;/exclusion&gt;</span><br><span class="line">      	&lt;/exclusions&gt;     </span><br><span class="line">    &lt;/dependency&gt;        </span><br><span class="line">&lt;/dependencies&gt;</span><br></pre></td></tr></table></figure></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">作用描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">dependencies</td>
+<td style="text-align:left">一个 pom.xml 文件中只能存在一个这样的标签。用来管理依赖的总标签。</td>
+</tr>
+<tr>
+<td style="text-align:left">dependency</td>
+<td style="text-align:left">包含在dependencies标签中，可以有无数个，每一个表示一个依赖</td>
+</tr>
+<tr>
+<td style="text-align:left">groupId<br>artifactId<br>version</td>
+<td style="text-align:left">依赖的基本坐标，对于任何一个依赖来说，基本坐标是最重要的，Maven根据坐标才能找到需要的依赖。</td>
+</tr>
+<tr>
+<td style="text-align:left">type</td>
+<td style="text-align:left">依赖的类型，对应于项目坐标定义的packaging。大部分情况下，该元素不必声明，其默认值是jar。</td>
+</tr>
+<tr>
+<td style="text-align:left">scope</td>
+<td style="text-align:left">依赖的范围，默认值是 compile。</td>
+</tr>
+<tr>
+<td style="text-align:left">optional</td>
+<td style="text-align:left">标记依赖是否可选。</td>
+</tr>
+<tr>
+<td style="text-align:left">exclusions</td>
+<td style="text-align:left">用来排除传递性依赖。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="依赖范围"><a href="#依赖范围" class="headerlink" title="依赖范围"></a>依赖范围</h3><table>
+<thead>
+<tr>
+<th style="text-align:left">依赖范围（scope）</th>
+<th style="text-align:left">编译时依赖</th>
+<th style="text-align:left">测试时依赖</th>
+<th style="text-align:left">运行时依赖</th>
+<th style="text-align:left">是否打入包</th>
+<th style="text-align:left">例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">compile</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">SLF4J</td>
+</tr>
+<tr>
+<td style="text-align:left">provided</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">N</td>
+<td style="text-align:left">SERVLET-API</td>
+</tr>
+<tr>
+<td style="text-align:left">test</td>
+<td style="text-align:left">N</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">N</td>
+<td style="text-align:left">N</td>
+<td style="text-align:left">JUNIT</td>
+</tr>
+<tr>
+<td style="text-align:left">runtime</td>
+<td style="text-align:left">N</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">MYSQL JDBC DRIVER</td>
+</tr>
+<tr>
+<td style="text-align:left">system</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">Y</td>
+<td style="text-align:left">有nexus后,不用system</td>
+</tr>
+</tbody>
+</table>
+<h3 id="依赖传递"><a href="#依赖传递" class="headerlink" title="依赖传递"></a>依赖传递</h3><p><strong>注意：只有编译和运行时依赖可以传递</strong><br>例：<br>&emsp;A-&gt;B-&gt;C</p>
+<ul>
+<li>简单传递依赖:A-&gt;C<br>&emsp;A-&gt;B-C(0.1)<br>&emsp;A-&gt;C(0.2)</li>
+<li>最短路径优先原则: A-&gt;C(0.2)<br>&emsp;A-&gt;B-&gt;C(0.1)<br>&emsp;A-&gt;E-&gt;C(0.2)</li>
+<li>第一声明优先原则:最终依赖C(0.1)</li>
+</ul>
+<h3 id="依赖归类"><a href="#依赖归类" class="headerlink" title="依赖归类"></a>依赖归类</h3><h3 id="依赖排除"><a href="#依赖排除" class="headerlink" title="依赖排除"></a>依赖排除</h3><h3 id="依赖继承"><a href="#依赖继承" class="headerlink" title="依赖继承"></a>依赖继承</h3><p>###Maven依赖查找顺序<br><strong>本地仓库-&gt;阿里镜像库-&gt;中央仓库</strong></p>
+<h2 id="剩下的部分有空再改"><a href="#剩下的部分有空再改" class="headerlink" title="剩下的部分有空再改"></a>剩下的部分有空再改</h2><a id="more"></a>	
+	</div>
+	
+	<div id="current-post-cover" data-scr="/SeasonTemple.github.io/img/lake.jpg"></div>
+
+	<!-- relate post, comment...-->
+	<div class="investment-container">
+		<div class="investment-header">
+			<div class="investment-title-1">
+				<div class="on">相关文章</div>
+				<div>评论</div>
+				<div>分享</div>
+			</div>
+			<div class="investment-title-2">	            
+				
+	<span>
+		<a href="javascript: window.scrollTo(0, 0);">返回顶部</a>
+		
+		
+			<a href="/SeasonTemple.github.io/2019/05/10/SSM/" title="SSM" rel="next">
+				下一篇&raquo;
+			</a>
+			
+	</span>
+
+
+      		
+			</div>	
+		</div>
+		
+		<div class="investment-content">
+			<div class="investment-content-list">
+				
+
+<div class="relate-post">
+	
+		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/SeasonTemple.github.io/2019/05/10/SSM/" title="SSM">
+								SSM			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 10日, 2019				
+							</p>
+							<p class="relate-post-content">
+								Emmmmm&emsp;今天准备分享的是正在研究中的基于SSM框架开发一个网站项目
+SSM先简单介绍一下什么是SSM框架：&emsp;&emsp;SSM是指Spring、SpringMvc、Mybaits，这三。
+项目截图
+登录界面：...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/SeasonTemple.github.io/2019/05/10/SSM/" title="SSM">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/kate.jpg" alt="SSM">
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/SeasonTemple.github.io/2019/05/05/My-First-Blog/" title="My First Blog">
+								My First Blog			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								五月 5日, 2019				
+							</p>
+							<p class="relate-post-content">
+								首先&emsp;本文主要为测试Markdown以及Hexo的效果
+其次&emsp;Markdwon 是一种轻量级标记语言，它以纯文本形式（易读、易写、易更改）编写文档，并最终以HTLM格式发布。&emsp;顺便了解一下Markdown...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/SeasonTemple.github.io/2019/05/05/My-First-Blog/" title="My First Blog">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/vs.jpg" alt="My First Blog">
+							</a>
+						</div>
+					</li>											
+			
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/SeasonTemple.github.io/2019/04/30/hello-world/" title="Hello World">
+								Hello World			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								四月 30日, 2019				
+							</p>
+							<p class="relate-post-content">
+								Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/SeasonTemple.github.io/2019/04/30/hello-world/" title="Hello World">				
+								
+								<img class="lazy" src="/img/placeholder.jpg" data-src="/img/cart_cover.jpg" alt="Hello World">
+							</a>
+						</div>
+					</li>											
+			
+			
+		</ul>
+	
+</div>	
+			</div>
+			<div class="investment-content-list">
+				<div class="layout-comment">
+
+	
+
+		
+
+			<!-- I don't know !!!-->
+			<div>Please check the comment setting in config.yml of hexo-theme-Annie!</div>
+			
+		
+		
+	
+
+</div>
+			</div>
+			<div class="investment-content-list">
+				<div class="layout-share">
+	
+	
+
+		
+			
+			<!-- socialShare share -->
+			<div class="social-share"></div>
+
+<!--  css & js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+			
+		
+		
+	
+</div>
+
+
+			</div>
+		</div>	
+	</div>
+	</div>
+</div>
+
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+
+<!-- show math formula -->
+
+
+
+	 
+	<script src="/SeasonTemple.github.io/plugin/clipboard/clipboard.js"></script>
+	<script>
+		// Copy code !
+	    function codePreprocessing() {
+	        $("#article-content .highlight").each(function() {
+
+	            $(this).wrap('<div id="post-code"></div>');
+
+	        })
+
+	        $("#article-content #post-code").each(function() {
+
+	            $(this).prepend('<nav class="copy-nav"><span><i class="code-language"></i></span></nav>');
+
+	        })
+
+	        $("#article-content .copy-nav").each(function() {
+	            var temp = $(this).next().attr('class'),
+	                language = ((temp.length > 9) && (temp != null)) ? temp.substr(10) : "none"; //why 9? Need to check language?
+
+	            $(this).find('.code-language').text(language);
+
+	            $(this).append('<span class="copy-btn"><i class="fa fa-copy" aria-hidden="true"></i></span>');
+
+	        });
+	    }
+
+		function codeCopy() {
+		    $('#article-content #post-code').each(function(i) {
+		        var codeCopyId = 'codeCopy-' + i;
+
+		        var codeNode = $(this).find('.code'),
+		            copyButton = $(this).find('.copy-btn');
+
+		        codeNode.attr('id', codeCopyId);
+		        copyButton.attr('data-clipboard-target-id', codeCopyId);
+		    })
+
+		    
+			var clipboard = new ClipboardJS('.copy-btn', {
+					target: function(trigger) {
+						return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+					}
+		      	});
+
+			//pure js
+			function showTooltip(elem, msg) {		   
+				elem.setAttribute('aria-label', msg);
+				elem.setAttribute('class', 'copy-btn copy-status');
+				setTimeout(function() {
+					elem.setAttribute('class', 'copy-btn');
+				}, 2000);
+			}
+
+			clipboard.on('success', function(e) {
+			    e.clearSelection();
+			    console.info('Action:', e.action);		   
+			    console.info('Trigger:', e.trigger);
+			    showTooltip(e.trigger, 'Copied!');
+			    
+			});
+			clipboard.on('error', function(e) {
+			    console.error('Action:', e.action);
+			    console.error('Trigger:', e.trigger);
+			});
+		
+
+		}
+
+		if ($('.layout-post').length) {
+		    codePreprocessing();
+		    codeCopy();
+		} 
+	</script>
+
+
+
+
+
+<link rel="stylesheet" href="/SeasonTemple.github.io/plugin/fancybox/jquery.fancybox.css">
+<script src="/SeasonTemple.github.io/plugin/fancybox/jquery.fancybox.js"></script>
+
+<script type="text/javascript">
+	var titleID = $('.article-title a'),
+		imageID = $('.article-content img'),
+		videoID = $('.article-content video');
+
+	var postTitle = titleID.text() ? titleID.text() : "No post title!";
+
+	imageID.each(function() {
+		var imgPath = $(this).attr('src'),
+			imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
+
+		//给每个匹配的<img>元素打包, 即添加父元素<a>
+		$(this).wrap('<a data-fancybox="gallery" data-caption=" 《 ' + postTitle + ' 》 ' + imgTitle + ' "  href=" ' + imgPath + ' "> </a>');
+	});
+
+	videoID.each(function() {
+		var videoPath = $(this).attr('src');
+
+		//给每个匹配的<img>元素打包, 即添加父元素<a>
+		$(this).wrap('<a data-fancybox href=" ' + videoPath + ' "> </a>');
+	});
+	//TODO：支持html5 video
+
+	if($('#layout-post').length) {
+		$('[data-fancybox="gallery"]').fancybox({
+			loop: true,
+			buttons: [
+				"zoom",
+				"share",
+				"slideShow",
+				"fullScreen",
+				//"download",
+				"thumbs",
+				"close"
+			],
+			protect: false
+		});
+	}
+</script>
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div class="social">
+		<ul>
+	
+		<li>
+			<a href="https://github.com/SeasonTemple" target="_blank">
+				<i class="fa fa-github"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="https://github.com/" target="_blank">
+				<i class="fa fa-weibo"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="https://github.com/" target="_blank">
+				<i class="fa fa-pinterest"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="https://github.com/" target="_blank">
+				<i class="fa fa-instagram"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="https://github.com/" target="_blank">
+				<i class="fa fa-twitter"></i>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/SeasonTemple.github.io/atom.xml" target="_blank">
+				<i class="fa fa-rss"></i>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+		
+	<div class="copyright">
+		<p>
+			 
+				&copy;2018 - 2019, content by SeasonTemple. All Rights Reserved.
+			
+			
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+		
+	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+
+		<span id="busuanzi_container_page_pv">
+	  		本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+		</span>
+
+	
+
+
+
+
+		</p>
+		<p>
+			<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- set '1' to show motto in all pages! -->
+
+	<script src="/SeasonTemple.github.io/plugin/motto/motto.js"></script>
+	
+	<script type="text/javascript">
+		$(".motto").html( getMingYanContent() );
+	</script>	
+
+
+
+
+	<!--
+	时间：2018-10-3
+	描述：
+		插件名称：hexo-generator-search-zip
+		插件来源: https://github.com/SuperKieran/hexo-generator-search-zip
+		代码参考：https://github.com/SuperKieran/TKL/blob/master/layout/_partial/search.ejs(Include: js & css)	
+-->
+<div class="popup search-popup local-search-popup">
+	<div class="local-search-container">
+		<span class="popup-btn-close">
+      		ESC
+   		</span>
+		<div class="local-search-header">
+			<div class="input-prompt">				
+			</div>
+			<input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+		</div>
+		<div class="local-search-body">
+			<div id="local-search-output"></div>
+		</div>
+		<div class="local-search-footer">
+			<div class="topN-post">				
+				
+								
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="/SeasonTemple.github.io/plugin/search/ziploader.js"></script>
+<script src="/SeasonTemple.github.io/plugin/search/search.js"></script>
+
+<script type="text/javascript">
+	var search_path = 'search.json',
+		zip_Path = '/SeasonTemple.github.io/search.zip',
+		version_Path = '/SeasonTemple.github.io/searchVersion.txt',
+		input_Trigger = 'auto',
+		top_N = '2';
+
+	themeLocalSearch({
+		search_path, 
+		zip_Path, 
+		version_Path, 
+		input_Trigger, 
+		top_N
+	});
+</script>
+
+
+<!-- love effect -->
+
+	<script src="/SeasonTemple.github.io/plugin/love/love.js"></script>
+
+
+<!-- back to top -->
+
+	
+	<div id="totop">
+  		<a href="javascript:;" name="TOTOP" class="fa fa-arrow-up"></a>
+	</div>
+
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<script src="/SeasonTemple.github.io/plugin/vibrant/vibrant.js"></script>
+<script src="/SeasonTemple.github.io/plugin/chinese/chinese.js"></script>
+<script src="/SeasonTemple.github.io/plugin/imgLazyLoader/yall.min.js"></script>
+<script src="/SeasonTemple.github.io/plugin/imgResize/jquery.resizeimagetoparent.min.js"></script>
+<script src="/SeasonTemple.github.io/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/SeasonTemple.github.io/js/resizediv.js"></script>
+<script src="/SeasonTemple.github.io/js/main.js"></script>
+	<script src="/SeasonTemple.github.io/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/SeasonTemple.github.io/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.9},"log":false});</script></body>	
+</html>
