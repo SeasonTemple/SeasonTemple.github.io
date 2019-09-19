@@ -489,6 +489,29 @@
   </entry>
   
   <entry>
+    <title>杂谈--Java与JVM</title>
+    <link href="http://seasontemple.top/2019/06/11/%E6%9D%82%E8%AE%BA-Java%E4%B8%8EJVM/"/>
+    <id>http://seasontemple.top/2019/06/11/杂论-Java与JVM/</id>
+    <published>2019-06-11T11:44:16.000Z</published>
+    <updated>2019-09-19T04:02:18.436Z</updated>
+    
+    <content type="html"><![CDATA[<p><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"></p><meta name="referrer" content="no-referrer"><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>尽管一直在学java、用java，但对于底层的东西却仍处于一知半解的状态。<br>显然这样下去是不行的，如果只为了敲代码而敲代码。可以预见今后的工作中只会陷入一种死循环–敲代码、出Bug、改Bug、改不好、重新敲、出Bug，然后改、改不好，最后就只能是改不动自闭、改不动自闭and改不动自闭。  </p><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;upgrade-insecure-requests&quot;&gt;&lt;/p&gt;
+&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+
+&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;尽管一直在学java、用java，但对于底层的东西却仍处于一知半解的状态。&lt;br&gt;显然这样下去是不行的，如果只为了敲代码而敲代码。可以预见今后的工作中只会陷入一种死循环–敲代码、出Bug、改Bug、改不好、重新敲、出Bug，然后改、改不好，最后就只能是改不动自闭、改不动自闭and改不动自闭。  &lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Java JVM" scheme="http://seasontemple.top/tags/Java-JVM/"/>
+    
+  </entry>
+  
+  <entry>
     <title>SSM</title>
     <link href="http://seasontemple.top/2019/05/10/SSM/"/>
     <id>http://seasontemple.top/2019/05/10/SSM/</id>
